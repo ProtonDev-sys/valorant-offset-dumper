@@ -1,48 +1,5 @@
 # valorant-offset-dumper
 
-Standalone pattern scanner for `VALORANT.exe`.
-
-The repository contains only:
-
-- source code
-- build files
-- an up to date Windows binary
-
-## Binary
-
-Current binary: `bin/valorant-offset-dumper.exe`
-
-Built from this source on March 21, 2026 against a local `VALORANT.exe` with:
-
-- size: `216,543,232` bytes
-- SHA-256: `5300F292921A70658567306D609840EEFAFD2A6694825E0ED8450078FD7B8336`
-- binary SHA-256: `328EF67759FD55501292C1CC9E6DD211953E6D4939A4C9EAA24C2F0644ADDD8F`
-
-## Build
-
-```bat
-build.bat
-```
-
-Or:
-
-```bat
-cmake -S . -B build -G "Visual Studio 18 2026" -A x64
-cmake --build build --config Release
-```
-
-## Run
-
-```bat
-bin\valorant-offset-dumper.exe
-```
-
-To scan a different binary:
-
-```bat
-bin\valorant-offset-dumper.exe path\to\VALORANT.exe
-```
-
 ## Signatures
 
 | Name | Kind | Pattern |
@@ -63,7 +20,7 @@ bin\valorant-offset-dumper.exe path\to\VALORANT.exe
 | `gworld` | `RipRelative32` | `48 8B 15 ?? ?? ?? ?? 66 66 66 0F 1F 84 00 00 00 00 00 48 63 C1 48 8D 0C 40 48 8D 04 CA 4C 39 08 74 ?? 8B 48 10 83 F9 FF 75 ?? EB ??` |
 | `fname_pool` | `RipRelative32` | `48 8D 35 ?? ?? ?? ?? 74 05 48 8B C6 EB 0F 48 8B CE E8 85 A2 01 01` |
 
-## Current Runtime Offsets
+## Current Offsets
 
 ```text
 ProcessEvent: 0x1AF6470
@@ -81,11 +38,6 @@ GetFiringLocationAndDirection: 0x6A41070
 TriggerVeh: 0x170F4B6
 gworld: 0xC0CC120
 fname_pool: 0xC25FB80
-```
-
-## Current Field And Layout Offsets
-
-```text
 uworld_pointer: 0x80
 game_instance: 0x1D8
 gamestate: 0x178
