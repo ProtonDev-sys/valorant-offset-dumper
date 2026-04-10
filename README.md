@@ -23,19 +23,19 @@
 ## Current Offsets
 
 ```text
-ProcessEvent: 0x1AF6470
-StaticFindObject: 0x1B1F7C0
-StaticLoadObject: 0x1B232F0
-BoneMatrix: 0x4071D70
-SetOutlineMode: 0x40064F0
-FMemoryMalloc: 0x16D7BC0
-PlayFinisher: 0x61DAE00
-get_spread_values: 0x6E95E00
-get_spread_angles: 0x627B290
-tovector_and_normalize: 0x17D7350
-toangle_and_normalize: 0x17D1B50
-GetFiringLocationAndDirection: 0x6A41070
-TriggerVeh: 0x170F4B6
-gworld: 0xC0CC120
-fname_pool: 0xC25FB80
+[SUCCESS] -> ProcessEvent: 0x1B437A0
+[SUCCESS] -> StaticFindObject: 0x1B6D070
+[SUCCESS] -> StaticLoadObject: 0x1B70BA0
+[SUCCESS] -> BoneMatrix: 0x40C1190
+[SUCCESS] -> SetOutlineMode: 0x4055840
+[SUCCESS] -> FMemoryMalloc: 0x1724140
+[SUCCESS] -> PlayFinisher: 0x624EB20
+[SUCCESS] -> get_spread_values: 0x6F28690
+[SUCCESS] -> get_spread_angles: 0x62EE2C0
+[SUCCESS] -> tovector_and_normalize: 0x18238B0
+[SUCCESS] -> toangle_and_normalize: 0x181E0B0
+[SUCCESS] -> GetFiringLocationAndDirection: 0x6AC3260
+[SUCCESS] -> TriggerVeh: 0x175BA46
+[SUCCESS] -> gworld: 0xC19A0C0
+[FAILED]  -> fname_pool: pattern not found
 ```
